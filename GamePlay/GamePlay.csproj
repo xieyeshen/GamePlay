@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7071486-D980-4E1E-A44B-019BE1869BF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GamePlay</RootNamespace>
+    <AssemblyName>GamePlay</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCloseAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCloseAccount.Designer.cs">
+      <DependentUpon>frmCloseAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExchangeGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExchangeGoods.Designer.cs">
+      <DependentUpon>frmExchangeGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFetchCoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFetchCoin.Designer.cs">
+      <DependentUpon>frmFetchCoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFreezeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreezeCard.Designer.cs">
+      <DependentUpon>frmFreezeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInGoods.Designer.cs">
+      <DependentUpon>frmInGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInqGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInqGoods.Designer.cs">
+      <DependentUpon>frmInqGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberAccount.Designer.cs">
+      <DependentUpon>frmMemberAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberHistory.Designer.cs">
+      <DependentUpon>frmMemberHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemberOpen.Designer.cs">
+      <DependentUpon>frmMemberOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOutGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOutGoods.Designer.cs">
+      <DependentUpon>frmOutGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecharge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecharge.Designer.cs">
+      <DependentUpon>frmRecharge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReissueCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReissueCard.Designer.cs">
+      <DependentUpon>frmReissueCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellCoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellCoin.Designer.cs">
+      <DependentUpon>frmSellCoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellGoods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellGoods.Designer.cs">
+      <DependentUpon>frmSellGoods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellGoodsEnterId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellGoodsEnterId.Designer.cs">
+      <DependentUpon>frmSellGoodsEnterId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSellTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSellTicket.Designer.cs">
+      <DependentUpon>frmSellTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnfreezeCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnfreezeCard.Designer.cs">
+      <DependentUpon>frmUnfreezeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCloseAccount.resx">
+      <DependentUpon>frmCloseAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExchangeGoods.resx">
+      <DependentUpon>frmExchangeGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFetchCoin.resx">
+      <DependentUpon>frmFetchCoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreezeCard.resx">
+      <DependentUpon>frmFreezeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInGoods.resx">
+      <DependentUpon>frmInGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInqGoods.resx">
+      <DependentUpon>frmInqGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberAccount.resx">
+      <DependentUpon>frmMemberAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberHistory.resx">
+      <DependentUpon>frmMemberHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberOpen.resx">
+      <DependentUpon>frmMemberOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOutGoods.resx">
+      <DependentUpon>frmOutGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecharge.resx">
+      <DependentUpon>frmRecharge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReissueCard.resx">
+      <DependentUpon>frmReissueCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellCoin.resx">
+      <DependentUpon>frmSellCoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellGoods.resx">
+      <DependentUpon>frmSellGoods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellGoodsEnterId.resx">
+      <DependentUpon>frmSellGoodsEnterId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSellTicket.resx">
+      <DependentUpon>frmSellTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnfreezeCard.resx">
+      <DependentUpon>frmUnfreezeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
